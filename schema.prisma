@@ -1,0 +1,15 @@
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:Holienka1@localhost:5432/postgres"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Properties { 
+    id        Int      @id @default(autoincrement())
+    index Int @unique
+    Title String
+    ImageURL String
+}
