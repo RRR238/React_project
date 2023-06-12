@@ -103,7 +103,7 @@ check_n_delete()
 
 })
 
-/*send index.html (frontend part) file as a response when browser sends get request on port 8080 without any parameters*/
+/*send index.html (frontend part) file as a response when browser sends get request on port 3000 without any parameters*/
 app.get("/",(req,rep)=>{
 
         const fs = require('fs')
